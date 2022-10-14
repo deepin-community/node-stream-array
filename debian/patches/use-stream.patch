@@ -1,0 +1,12 @@
+Description: Use stream
+ stream is available in nodejs
+--- a/index.js
++++ b/index.js
+@@ -1,6 +1,6 @@
+ 'use strict'
+ 
+-var Readable = require('readable-stream').Readable
++var Readable = require('stream').Readable
+ ;
+ 
+ /**

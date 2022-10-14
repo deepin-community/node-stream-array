@@ -1,0 +1,27 @@
+Description: Replace Buffer() by Buffer.from()
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: no
+Last-Update: 2020-03-02
+
+--- a/test/2.js
++++ b/test/2.js
+@@ -25,7 +25,7 @@
+ });
+ 
+ test('array of buffers', function(t) {
+-    var s = streamify([new Buffer('One'), new Buffer('Two')]);
++    var s = streamify([new Buffer.from('One'), new Buffer.from('Two')]);
+ 
+     s.pipe(concat(function(res) {
+         t.equal(1, arguments.length, 'concat returns 1 arg');
+--- a/test/3.js
++++ b/test/3.js
+@@ -15,7 +15,7 @@
+         }
+     );
+ 
+-    [[], [1], [1,2], ['1', '2'], [new Buffer('asdf')]].forEach(
++    [[], [1], [1,2], ['1', '2'], [new Buffer.from('asdf')]].forEach(
+         function(item) {
+             t.doesNotThrow(function() {
+                 streamify(item);

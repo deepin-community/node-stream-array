@@ -1,0 +1,27 @@
+Source: node-stream-array
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12)
+ , node-concat-stream
+ , node-tape
+ , pkg-js-tools (>= 0.9.20~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-stream-array
+Vcs-Git: https://salsa.debian.org/js-team/node-stream-array.git
+Homepage: https://github.com/mimetnet/node-stream-array
+Rules-Requires-Root: no
+
+Package: node-stream-array
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs (>= 2.1.0)
+Description: Pipe an Array through Node.js streams
+ This is rather useful for testing other streams. This library is a build
+ dependency of gulp-concat, concatenation support for gulp build tool.
+ .
+ Node.js is an event-based server-side JavaScript engine.

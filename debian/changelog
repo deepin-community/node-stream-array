@@ -1,0 +1,20 @@
+node-stream-array (1.1.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto test & install
+  * Update VCS fields to salsa
+  * Replace Buffer() by Buffer.from()
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 02 Mar 2020 12:02:17 +0100
+
+node-stream-array (1.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #863120)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 22 May 2017 15:57:53 +0530
